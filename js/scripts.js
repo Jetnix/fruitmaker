@@ -1,61 +1,62 @@
 $(document).ready(function() {
-  $("form#option1").submit(function(event) {
-  var shape = $("input:radio[name=shape]:checked").val();
+  $("form#option").submit(function(event) {
+  var make = $("input:radio[name=make]:checked").val();
+  var model = $("input:radio[name=model]:checked").val();
   var color = $("input:radio[name=color]:checked").val();
 
-  if (shape === "round" && color === "yellow") {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".roundyellow").show();
+  if (make === "bmw" && model === "coupe" && color === "green") {
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".bmwcoupegrn").show();
   }
-  else if (shape === "round" && color === "red") {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".roundred").show();
+  else if (make === "bmw" && model === "coupe" && color === "red") {
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".bmwcoupered").show();
   }
-  else if (shape === "round" && color === "blue") {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".roundblue").show();
+  else if (make === "bmw" && model === "coupe" && color === "blue") {
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".bmwcoupeblue").show();
   }
-  else if (shape === "long" && color === "yellow") {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".longyellow").show();
+  else if (make === "ferrari" && model === "coupe" && color === "green") {
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".ferraricoupegrn").show();
   }
-  else if (shape === "long" && color === "red") {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".longred").show();
+  else if (make === "ferrari" && model === "coupe" && color === "red") {
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".ferraricoupered").show();
   }
-  else if (shape === "long" && color === "blue") {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".longblue").show();
+  else if (make === "ferrari" && model === "coupe" && color === "blue") {
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".ferraricoupeblue").show();
   }
-  else if (shape === "oval" && color === "yellow") {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".ovalyellow").show();
+  else if (make === "honda" && model === "coupe" && color === "green") {
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".hondacoupegreen").show();
   }
-  else if (shape === "oval" && color === "red") {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".ovalred").show();
+  else if (make === "honda" && model === "coupe" && color === "red") {
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".hondacoupered").show();
   }
   else {
-    console.log(shape, color);
-    $("#newfruit").hide();
-    $("#option1").hide();
-    $(".ovalblue").show();
+    console.log(make, color);
+    $("#newcar").hide();
+    $("#option").hide();
+    $(".hondacoupeblue").show();
   }
   event.preventDefault();
   });
