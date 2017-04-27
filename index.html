@@ -10,49 +10,39 @@
   <body>
     <h1>Make your own FRUIT</h1>
 
-    <h2>Fruit shape</h2>
-
-    <div id="option1">
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="round" checked>
+    <div class="container">
+      <form id="option1">
+        <div class="radio">
+          <h2>Fruit shape</h2>
+          <p><input type="radio" name="shape" value="round"></p>
           Round
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="long">
+          <p><input type="radio" name="shape" value="long"></p>
           Long
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="oval">
+          <p><input type="radio" name="shape" value="oval"></p>
           Oval
-        </label>
+        </div>
+        <h2>Fruit Color</h2>
+        <div class="radio">
+          <p><input type="radio" name="color" value="yellow"></p>
+          Yellow
+          <p><input type="radio" name="color" value="red"></p>
+          Red
+          <p><input type="radio" name="color" value="blue"></p>
+          Blue
+        </div>
+          <button type="submit" class="btn">Create fruit!</button>
+      </form>
+      <h2>Result...</h2>
+      <div class="roundyellow" id="newfruit">
+        <img src= "img/roundyellow.jpg" style="width: 375px;height:375px">
       </div>
-    </div>
+      <div class="roundred" id="newfruit">
+        <img src= "img/roundred.jpg" style="width: 375px;height:375px">
+      </div>
+      <div class="roundblue" id="newfruit">
+        <img src= "img/roundblue.jpg" style="width: 375px;height:375px">
+      </div>
 
-    <h2>Fruit Color</h2>
-
-    <div id="option2">
-    <div class="radio">
-      <label>
-        <input type="radio" name="flavor" value="yellow" checked>
-        Yellow
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="flavor" value="red">
-        Red
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="flavor" value="blue">
-        Blue
-      </label>
     </div>
   </body>
 </html>
